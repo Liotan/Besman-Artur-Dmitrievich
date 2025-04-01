@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 18px;">
+    <p>
+    HTML-элемент &lt;area&gt; определяет область внутри карты изображения, в которой есть предварительно определённые области, доступные для кликов.<br>
+     Карта изображения позволяет связывать геометрические области изображения с гипертекстовыми ссылками.<br>
+<br>
+Этот элемент используется только внутри элемента &lt;map&gt;.
+    </p>    
+<p>
+    Атрибуты тега <area>:
+</p>
+<ul style="list-style: disc;">
+<li>shape — форма области. Может быть rect (прямоугольник), circle (круг) или poly (многоугольник).</li>
+<li>coords — координаты области. Зависят от значения shape. Для прямоугольника указываются координаты левого верхнего угла и правого нижнего угла (x1,y1,x2,y2).<br>
+     Для круга указывается координаты центра и радиус (x,y,r).<br>
+      Для многоугольника указываются координаты всех точек (x1,y1,x2,y2,x3,y3,...).</li>
+<li>alt — описание области для пользователей, которые не могут визуально увидеть карту изображения.</li>
+<li>download — предлагает скачать по ссылке целевой ресурс, указанный в href, вместо его отображения в браузере.</li>
+<li>href — адрес, на который будет переходить пользователь при клике на область.</li>
+<li>media — условия, которые должны быть выполнены для применения стиля к целевой странице.</li>
+<li>referrerpolicy — политика отправки referrer при переходе по ссылке.<br>
+     Это влияет на то, как информация о странице-источнике передается на страницу-назначение.</li>
+<li>rel — определяет отношение между текущей страницей и целевой страницей.</li>
+<li>target — указывает, как будет открыта целевая страница.<br>
+     Значения: _self (в текущем окне), _blank (в новом окне), _parent (в родительском фрейме) или _top (во всем окне браузера).</li>
+</ul>
+<p>
+    Закрывающего тега быть не должно.
+</p>
+<map name="figures">
+    <area shape="rect" coords="215 0 300 70" href="https://en.wikipedia.org/wiki/Square" >
+    <area shape="rect" coords="0 0 115 60" href="https://en.wikipedia.org/wiki/Rectangle" >
+    <area shape="poly" coords="120 155 0 155 58 73" href="https://en.wikipedia.org/wiki/Quadrilateral" >
+    <area shape="circle" coords="160 30 40" href="https://en.wikipedia.org/wiki/Circle" >
+    <area shape="poly" coords="" href="https://en.wikipedia.org/wiki/Triangle" >
+    <area shape="poly" coords="" href="https://en.wikipedia.org/wiki/Pentagon" >
+</map>
+<img src="figures.png" alt="" usemap="#figures"></img>
+  
+</body>
+</html>
