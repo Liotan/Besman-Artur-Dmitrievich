@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Нестандартные значения цветов</h1>
+    <p>
+       <font color="#Bruce Willis">Текст, написанный цветом Bruce Willis </font> <br>
+        <font color="#CANDY">Текст, написанный цветом Candy</font> <br>
+    </p>
+    <p>
+        Браузер пытается трактовать указанные в теге &lt;font&gt; значения цветов, через перевод этих слов в 16-тиричную систему исчисления. <br>
+        При переводе браузер заменяет не входящие в эту систему символы на нули. <br>
+        <br>
+        BruceWillis преобразуется в B00CE000000 <br>
+        CANDY преобразуется в CA0D00 <br>
+        <br>
+        B00CE000000 делится на три части, чтобы каждой равной части присвоить цвет в диапазоне <font color="red">R</font><font color="green">G</font><font color="blue">B</font>:<br>
+        <ul>
+            <li style="color: red;">B00C</li>
+            <li style="color: green;">E000</li>
+            <li style="color: blue;">0000</li>
+        </ul>
+        Если сократить его до B0CE0000 получится тот же цвет <br>
+        <font color="B0CE0000">Bruce Willis</font> <br>
+        Но если сократить все нули до 0, получится другой цвет: <br>
+        B0CE00 будет выглядеть так:<br>
+        <font color="B0CE00">Bruce Willis</font> <br>
+        <br>
+        Так можно баловаться с любым словом, которое браузер сможет интерпретировать: <br>
+        <ul>
+        <li><font color="#Andrew">Andrew</font> - A0D0E0</li> <br>
+        <li><font color="#Fancy">Fancy</font> - FA0C00</li> <br>
+        <li><font color="#Clancy">Clancy</font> - C0A0C0</li> <br>
+       <li><font color="#Flame">Flame</font> - F0A0E0</li>
+    </ul>
+    </p>
+</body>
+</html>
