@@ -19,7 +19,7 @@
 }
 .headerTop {
     padding-top: 28px;
-    padding-bottom: 28px;
+    padding-bottom: 18px;
     font-family: Cuprum;
 }
 .header .buttons {
@@ -35,7 +35,7 @@
     font-size: 16px;
     line-height: 123%;
     font-weight: 700;
-    padding: 12px 24px;
+    padding: 8px 24px;
 }
 .buttons button {
     background-color: #F8B806;
@@ -46,12 +46,13 @@
     font-size: 16px;
     float: right;
     margin-left: 17px;
+    margin-top: -8px;
 }
 .buttons img {
     float: right;
     padding-left: 9px;
     margin-left: 9px;
-    margin-top: 12px;
+    margin-top: 4px;
 }
 .resultEstate p {
     color: white;
