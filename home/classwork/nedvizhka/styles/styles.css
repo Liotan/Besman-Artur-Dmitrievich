@@ -1,234 +1,304 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container {
-    margin: 0 auto;
-    width: 1440px;
-}
-.clearfix::after {
-    display: block;
-    content: "";
-    clear: both;
-}
-.header {
-    background-image:url("../img/background.png") ;
-    background-position: top left;
-    background-repeat: no-repeat;
-}
-.headerTop {
-    padding-top: 28px;
-    padding-bottom: 18px;
-    font-family: Cuprum;
-}
-.header .buttons {
-    float: right;
-}
-.header .resultEstate {
-    float: left;
-}
-.headerTop li {
-    float: left;
-    list-style: none;
-    color: white;
-    font-size: 16px;
-    line-height: 123%;
-    font-weight: 700;
-    padding: 8px 24px;
-}
-.buttons button {
-    background-color: #F8B806;
-    height: 56px;
-    width: 187px;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    float: right;
-    margin-left: 17px;
-    margin-top: -8px;
-}
-.buttons img {
-    float: right;
-    padding-left: 9px;
-    margin-left: 9px;
-    margin-top: 4px;
-}
-.resultEstate p {
-    color: white;
-    margin-left: 17px;
-    padding-left: 17px;
-    border-left: white solid 1px;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 123%;
-}
-.resultEstate img {
-    float: left;
-}
-.park {
-    font-family: Montserrat;
-    padding-top: 204px;
-    padding-bottom: 196px;
-}
-.park img {
-    float: right;
-    border-radius: 21px;
-}
-.park h1{
-    color: white;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 123%;
-}
-.park p {
-    color: white;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 123%;
-    margin-bottom: 32px;
-}
-.park button {
-    background-color: white;
-    height: 60px;
-    width: 260px;
-    border-radius: 16px;
-    font-size: 18px;
-    font-weight: 500;
-}
-hr {
-    color: white;
-    height: 1px;
-}
-h3 {
-    color: white;
-    font-family: Montserrat;
-    font-weight: 700;
-    text-align: center;
-    font-size: 45px;
-    line-height: 123%;
-    background-color: #242424;
-    background-image: url("../img/AbstractDesign.png"), url("../img/Group.png");
-    background-position: top left, top right;
-    background-repeat: no-repeat, no-repeat;
-    padding-top: 72.5px;
-    padding-bottom: 72.5px;
-}
-.header h3 {
-    background-image: url("../img/AbstractDesign.png"), url("../img/Group.png");
-    background-position: top left, top right;
-    background-repeat: no-repeat, no-repeat;
-    padding-top: 72.5px;
-    padding-bottom: 72.5px;
-}
-.images {
-    height: 587px;
-    background-color: #242424;
-    text-align: center;
-}
-.images img {
-    float: left;
-    width: 25%;
-}
-.images div {
-    background-color: #242424;
-}
-.images button {
-    background-color: #F8B806;
-    height: 52px;
-    width: 241px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500px;
-    line-height: 123%;
-    margin: 32px auto;
-}
-.selection {
-    background-color: #242424;
-    background-image: url("../img/AbstractDesign1).png");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    padding: 84.5px 240px;
-}
-.selection h3 {
-    background-image: none;
-    background-color: transparent;
-    text-align: left;
-    margin-bottom: 16px;
-    padding-bottom: 0px;
-}
-.homeNumbers {
-    float: left;
-}
-.homeNumbers p {
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 24px;
-    color: white;
-}
-.homeNumbers li {
-    float: left;
-    list-style: none;
-    margin-right: 16px;
-    margin-top: 16px;
-    margin-bottom: 32px;
-}
-.homeNumbers button {
-    width: 50px;
-    height: 50px;
-    background-color: #3E3E3E;
-    border: none;
-    border-radius: 32px;
-    padding: 12px 16px;
-    color: white;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 18px;
-}
-.homeImage {
-    float: right;
-}
-.info {
-    background-color: #242424;
-    padding-top: 42.5px;
-    padding-bottom: 42.5px;
-}
-.infoImage {
-    float: right;
-    background-image: url("../img/AbstractDesign2.png");
-    background-position: bottom left;
-    background-repeat: no-repeat;
-}
-.infoImage img {
-    height: 431px;
-    width: 582px;
-    padding-left: 32px;
-    padding-bottom: 43px;
-}
-.infoPark {
-    float: left;
-}
-.info h3 {
-    background-image: none;
-    background-color: transparent;
-    text-align: left;
-    margin-bottom: 32px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.info p {
-    color: white;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 123%;
-    margin-bottom: 77px;
-}
-.advantages {
-    background-image: url("../img/AbstractDesign3.png"), url("../img/Group1.png");
-    background-position: top left, top right;
-    background-repeat: no-repeat, no-repeat;
-    padding-top: 32.5px;
-    padding-bottom: 32.5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.header {
+  background-image: url("../img/background.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.headerTop {
+  padding-top: 28px;
+  padding-bottom: 18px;
+  font-family: Cuprum;
+}
+
+.header .buttons {
+  float: right;
+}
+
+.header .resultEstate {
+  float: left;
+}
+
+.headerTop li {
+  float: left;
+  list-style: none;
+  color: white;
+  font-size: 16px;
+  line-height: 123%;
+  font-weight: 700;
+  padding: 8px 24px;
+}
+
+.buttons button {
+  background-color: #F8B806;
+  height: 56px;
+  width: 187px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  float: right;
+  margin-left: 17px;
+  margin-top: -8px;
+}
+
+.buttons img {
+  float: right;
+  padding-left: 9px;
+  margin-left: 9px;
+  margin-top: 4px;
+}
+
+.resultEstate p {
+  color: white;
+  margin-left: 17px;
+  padding-left: 17px;
+  border-left: white solid 1px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 123%;
+}
+
+.resultEstate img {
+  float: left;
+}
+
+.park {
+  font-family: Montserrat;
+  padding-top: 204px;
+  padding-bottom: 196px;
+}
+
+.park img {
+  float: right;
+  border-radius: 21px;
+}
+
+.park h1 {
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 123%;
+}
+
+.park p {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 123%;
+  margin-bottom: 32px;
+}
+
+.park button {
+  background-color: white;
+  height: 60px;
+  width: 260px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+hr {
+  color: white;
+  height: 1px;
+}
+
+h3 {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-align: center;
+  font-size: 45px;
+  line-height: 123%;
+  background-color: #242424;
+  background-image: url("../img/AbstractDesign.png"), url("../img/Group.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 72.5px;
+  padding-bottom: 72.5px;
+}
+
+.header h3 {
+  background-image: url("../img/AbstractDesign.png"), url("../img/Group.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 72.5px;
+  padding-bottom: 72.5px;
+}
+
+.images {
+  height: 587px;
+  background-color: #242424;
+  text-align: center;
+}
+
+.images img {
+  float: left;
+  width: 25%;
+}
+
+.images div {
+  background-color: #242424;
+}
+
+.images button {
+  background-color: #F8B806;
+  height: 52px;
+  width: 241px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 123%;
+  margin: 32px auto;
+}
+
+.selection {
+  background-color: #242424;
+  background-image: url("../img/AbstractDesign1).png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 84.5px 240px;
+}
+
+.selection h3 {
+  background-image: none;
+  background-color: transparent;
+  text-align: left;
+  margin-bottom: 16px;
+  padding-bottom: 0px;
+}
+
+.homeNumbers {
+  float: left;
+}
+
+.homeNumbers p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+
+.homeNumbers li {
+  float: left;
+  list-style: none;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.homeNumbers button {
+  width: 50px;
+  height: 50px;
+  background-color: #3E3E3E;
+  border: none;
+  border-radius: 32px;
+  padding: 12px 16px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.homeImage {
+  float: right;
+}
+
+.info {
+  background-color: #242424;
+  padding-top: 42.5px;
+  padding-bottom: 42.5px;
+}
+
+.infoImage {
+  float: right;
+  background-image: url("../img/AbstractDesign2.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.infoImage img {
+  height: 431px;
+  width: 582px;
+  padding-left: 32px;
+  padding-bottom: 43px;
+}
+
+.infoPark {
+  float: left;
+}
+
+.info h3 {
+  background-image: none;
+  background-color: transparent;
+  text-align: left;
+  margin-bottom: 32px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.info p {
+  color: white;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 123%;
+  margin-bottom: 77px;
+}
+
+.advantages {
+  background-image: url("../img/AbstractDesign3.png"), url("../img/Group1.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 32.5px;
+  padding-bottom: 32.5px;
+}
+
+.advIcons {
+  background-color: #242424;
+}
+
+.box {
+  float: left;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 345px;
+  height: 300px;
+}
+
+.box p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  line-height: 150%;
+}
+
+.box img {
+  padding-bottom: 20px;
+}
+
+.variants {
+  background-image: url("../img/AbstractDesign4.png"), url("../img/iconLine.svg");
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 50.5px;
+  padding-bottom: 50.5px;
+  margin-top: -4px;
+}
