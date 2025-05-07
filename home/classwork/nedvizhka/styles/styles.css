@@ -214,7 +214,9 @@ h3 {
   font-weight: 500;
   font-size: 18px;
 }
-
+.homeNumbers button:hover {
+  background-color: #F8B806;
+}
 .homeImage {
   float: right;
 }
@@ -301,4 +303,237 @@ h3 {
   padding-top: 50.5px;
   padding-bottom: 50.5px;
   margin-top: -4px;
+}
+
+.variantsBlock {
+  background-color: #3F3D42;
+  background-image: url(../img/AbstractDesign5.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.varImages {
+  float: left;
+}
+.varImages img {
+  padding-bottom: 32px;
+}
+.varImages .mini img{
+float: left;
+}
+
+.varInfo {
+  float: right;
+  height: 595px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.varInfo p {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  line-height: 123%;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.varInfo h5 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  line-height: 123%;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.varInfo em {
+  text-transform: none;
+}
+
+.varInfo button {
+  background-color: #F8B806;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 20px 225px;
+  text-align: center;
+  border: none;
+}
+.comfort {
+  text-transform: uppercase;
+  padding-top: 50.5px;
+  padding-bottom: 50.5px;
+  background-image: url("../img/iconLine2.svg"), url("../img/AbstractDesign6.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+}
+.comfortBlock {
+  background-color: #242424;
+  padding-bottom: 72px;
+}
+.comfortInfo {
+  float: left;
+  background-image: url("../img/quote.png"), url("../img/quote2.png");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+.comfortInfo p {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  line-height: 123%;
+  padding-right: 43px;
+}
+.comfortImage {
+  float: right;
+  padding-bottom: 32px;
+}
+.comfortBlock li {
+  float: left;
+  list-style: none;
+}
+.comfortBlock li button {
+  color: white;
+  background-color: #797979;
+  padding: 19px 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Montserrat;
+  border: none;
+  width: 288px;
+  margin-bottom: 32px;
+}
+.comfortBlock h2 {
+  font-family: Montserrat;
+  font-size: 58px;
+  color: white;
+  line-height: 123%;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 67px;
+}
+.flatsSell {
+  width: 726px;
+  float: left;
+}
+.flatsSell h3 {
+background-image: none;
+padding-top: 45px;
+padding-bottom: 16px;
+text-align: left;
+}
+.flatsSell p {
+  color: white;
+  font-family: Montserrat;
+  font-size: 32px;
+  line-height: 123%;
+  font-weight: 400;
+}
+.fSellImages img {
+  float: right;
+}
+.input {
+  background-color: #3F3D42;
+  background-image: url("../img/AbstractDesign7.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.zayavka {
+  color: white;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 123%;
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+.colors {
+  padding-top: 60px;
+  margin-bottom: 32px;
+  color: white;
+}
+.colors img {
+  margin-bottom: -5px;
+}
+.redSpan {
+  color: #FF3F3F;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 123%;
+  font-family: Montserrat;
+}
+.yellowSpan {
+  color: #F8B806;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 123%;
+  font-family: Montserrat;
+}
+.input button {
+  background-color: #F8B806;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  padding: 26px 168.67px;
+  margin-left: 16px;
+  border: none;
+}
+.map {
+  background-color: #242424;
+  text-align: center;
+}
+.messengers {
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #333335;
+  border-radius: 10px;
+  float: left;
+  padding: 25px 415px;
+  margin-bottom: 32px;
+}
+.footer {
+  background-color: #242424;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.footer p {
+  font-family: Montserrat;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 123%;
+}
+.footer li {
+  color: white;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+  line-height: 123%;
+  padding-bottom: 20px;
+}
+.bs {
+  background-color: #242424;
+}
+.bs p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: white;
+  padding-top: 21px;
+  padding-bottom: 32px;
 }
