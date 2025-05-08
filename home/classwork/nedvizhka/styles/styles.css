@@ -16,7 +16,7 @@
 }
 
 .header {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background.jpg");
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -126,7 +126,7 @@ h3 {
   font-size: 45px;
   line-height: 123%;
   background-color: #242424;
-  background-image: url("../img/AbstractDesign.png"), url("../img/Group.png");
+  background-image: url("../img/AbstractDesign.gif"), url("../img/Group.gif");
   background-position: top left, top right;
   background-repeat: no-repeat, no-repeat;
   padding-top: 72.5px;
@@ -134,7 +134,7 @@ h3 {
 }
 
 .header h3 {
-  background-image: url("../img/AbstractDesign.png"), url("../img/Group.png");
+  background-image: url("../img/AbstractDesign.gif"), url("../img/Group.gif");
   background-position: top left, top right;
   background-repeat: no-repeat, no-repeat;
   padding-top: 72.5px;
@@ -169,7 +169,7 @@ h3 {
 
 .selection {
   background-color: #242424;
-  background-image: url("../img/AbstractDesign1).png");
+  background-image: url("../img/AbstractDesign1.gif");
   background-position: bottom right;
   background-repeat: no-repeat;
   padding: 84.5px 240px;
@@ -229,7 +229,7 @@ h3 {
 
 .infoImage {
   float: right;
-  background-image: url("../img/AbstractDesign2.png");
+  background-image: url("../img/AbstractDesign2.gif");
   background-position: bottom left;
   background-repeat: no-repeat;
 }
@@ -264,7 +264,7 @@ h3 {
 }
 
 .advantages {
-  background-image: url("../img/AbstractDesign3.png"), url("../img/Group1.png");
+  background-image: url("../img/AbstractDesign3.gif"), url("../img/Group1.gif");
   background-position: top left, top right;
   background-repeat: no-repeat, no-repeat;
   padding-top: 32.5px;
@@ -297,7 +297,7 @@ h3 {
 }
 
 .variants {
-  background-image: url("../img/AbstractDesign4.png"), url("../img/iconLine.svg");
+  background-image: url("../img/AbstractDesign4.gif"), url("../img/iconLine.svg");
   background-position: top left, top right;
   background-repeat: no-repeat, no-repeat;
   padding-top: 50.5px;
@@ -307,7 +307,7 @@ h3 {
 
 .variantsBlock {
   background-color: #3F3D42;
-  background-image: url(../img/AbstractDesign5.png);
+  background-image: url("../img/AbstractDesign5.gif");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
@@ -366,7 +366,7 @@ float: left;
   text-transform: uppercase;
   padding-top: 50.5px;
   padding-bottom: 50.5px;
-  background-image: url("../img/iconLine2.svg"), url("../img/AbstractDesign6.png");
+  background-image: url("../img/iconLine2.svg"), url("../img/AbstractDesign6.gif");
   background-position: top left, top right;
   background-repeat: no-repeat, no-repeat;
 }
@@ -376,7 +376,7 @@ float: left;
 }
 .comfortInfo {
   float: left;
-  background-image: url("../img/quote.png"), url("../img/quote2.png");
+  background-image: url("../img/quote.gif"), url("../img/quote2.gif");
   background-position: top left, bottom right;
   background-repeat: no-repeat, no-repeat;
 }
@@ -410,6 +410,9 @@ float: left;
   width: 288px;
   margin-bottom: 32px;
 }
+.comfortBlock li button:hover {
+  background-color: #F8B806;
+}
 .comfortBlock h2 {
   font-family: Montserrat;
   font-size: 58px;
@@ -442,7 +445,7 @@ text-align: left;
 }
 .input {
   background-color: #3F3D42;
-  background-image: url("../img/AbstractDesign7.png");
+  background-image: url("../img/AbstractDesign7.gif");
   background-position: bottom left;
   background-repeat: no-repeat;
 }
