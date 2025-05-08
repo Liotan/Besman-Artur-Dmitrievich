@@ -17,8 +17,9 @@
 
 .header {
   background-image: url("../img/background.jpg");
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headerTop {
@@ -295,6 +296,11 @@ h3 {
 .box img {
   padding-bottom: 20px;
 }
+.canvas {
+  background-color: #242424;
+  text-align: center;
+  width: auto;
+}
 
 .variants {
   background-image: url("../img/AbstractDesign4.gif"), url("../img/iconLine.svg");
@@ -494,6 +500,7 @@ text-align: left;
 .map {
   background-color: #242424;
   text-align: center;
+  width: auto;
 }
 .messengers {
   text-align: center;
