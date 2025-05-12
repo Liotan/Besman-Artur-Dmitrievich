@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+        }
+        img {
+            float: right;
+        }
+        img:hover {
+            content: url("star1.png");
+        }
+        img:hover ~ img {
+            content: url("star1.png");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="star0.png" alt="">
+        <img src="star0.png" alt="">
+        <img src="star0.png" alt="">
+        <img src="star0.png" alt="">
+        <img src="star0.png" alt="">
+        <img src="star0.png" alt="">
+        <img src="star0.png" alt="">
+    </div>
+</body>
+</html>
