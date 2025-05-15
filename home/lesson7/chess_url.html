@@ -25,8 +25,11 @@
             content: url("../lesson6/extref.png");
         }
         @media print{
+           a[href^="https:"]::before {
+            content:"(ссылка "
+           }
            a[href^="https:"]::after {
-            content: " (ссылка " attr(text) " на " attr(href) ")";
+            content:" на " attr(href) ")";
            }
         }
     </style>
@@ -36,7 +39,7 @@
     <p>
         Дата рождения: 13 апреля 1963 г. <br>
         <strong>Чемпион мира: 1985-1993</strong> <br>
-        <strong><a href="https://en.wikipedia.org/wiki/Garry_Kasparov" text="Информация">Информация</a></strong> <br>
+        <strong><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Информация</a></strong> <br>
         <em>
             Первый матч за звание чемпиона мира по шахматам Гарри Каспаров играл против чемпиона мира Анатолия Карпова.
             До этого они в разных официальных соревнованиях сыграли три партии, которые закончились вничью.
