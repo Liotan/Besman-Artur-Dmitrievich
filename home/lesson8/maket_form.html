@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form {
+            margin: 0 10px;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        select {
+            margin-left: 115px;
+        }
+
+        label {
+            display: block;
+        }
+        .article {
+            margin-left: 60px;
+        }
+        .radio {
+            margin-left: 85px;
+        }
+        @media all and (max-width:527px) {
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+        Для публикации вашей статьи заполните, пожалуйста, эту форму: <br> <br>
+        <label>
+            Название статьи:
+            <input type="text" class="article" name="article_name" id="">
+        </label> <br>
+        <label>
+            Рубрика:
+            <select name="select" id="">
+                <option value="programm">программирование</option>
+                <option value="design">графика и дизайн</option>
+                <option value="comp">компьютерная техника</option>
+            </select>
+        </label> <br>
+        <label>
+            Публикация:
+            <span class="radio">
+                <input type="radio" name="site_or_magazin" value="site">на сайте
+                <input type="radio" name="site_or_magazin" value="magazin">в журнале
+                <input type="radio" name="site_or_magazin" value="site and magazin">на сайте и в журнале
+            </span>
+        </label> <br>
+        <label>
+            Разрешить комментарии:
+            <input type="checkbox" name="comments">
+        </label> <br>
+        <label>
+            Текст статьи: <br>
+            <textarea name="article" id=""></textarea>
+        </label> <br>
+        <input type="submit">
+    </form>
 </body>
+
 </html>
