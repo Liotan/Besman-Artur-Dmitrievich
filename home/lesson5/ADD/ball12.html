@@ -6,7 +6,6 @@
     <title>Ball12</title>
     <style>
         .left {
-            background-color: cadetblue;
             float: left;
             width: 20%;
         }
@@ -16,17 +15,13 @@
             width: 200px;
         }
         .wrap {
-            background-color:indianred;
+            background-image: url("ball3.png"), url("ball3.png"), url("ball3.png"), url("ball3.png") ,url("wrapImage.jpg");
+            background-position: left top, left bottom, top right, bottom right , 10%;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
         }
         .content {
-            background-color: indianred;
-            margin-left: 20%;
+            margin-left: 22%;
             margin-right: 200px;
-        }
-        .balls {
-            background-image: url(ball3.png),url(ball3.png),url(ball3.png),url(ball3.png);
-            background-position: top left, top right, bottom left, bottom right;
-            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
         }
         .hidden {
             height: 0px;
@@ -36,7 +31,7 @@
 </head>
 <body>
     <div class="wrap">
-        <div class="left balls">
+        <div class="left">
            width 20%   width 20%   width 20%   width 20%   width 20%   width 20%   
            width 20%   width 20%   width 20%   width 20%   width 20%   width 20%   
            width 20%   width 20%   width 20%   width 20%   width 20%   width 20%
@@ -59,7 +54,7 @@
            width 20%   width 20%   width 20%   width 20%   width 20%   width 20%
            width 20%   width 20%   width 20%   width 20%   width 20%   width 20%
         </div>
-        <div class="right balls">
+        <div class="right">
             width 200px  width 200px  width 200px  width 200px  width 200px  width 200px
             width 200px  width 200px  width 200px  width 200px  width 200px  width 200px  
             width 200px  width 200px  width 200px  width 200px  width 200px  width 200px
@@ -73,7 +68,7 @@
             width 200px  width 200px  width 200px  width 200px  width 200px  width 200px
             width 200px  width 200px  width 200px  width 200px  width 200px  width 200px 
         </div>
-        <div class="content balls">
+        <div class="content">
             контент  контент  контент  контент  контент  контент  контент  контент  контент
             контент  контент  контент  контент  контент  контент  контент  контент  контент
             контент  контент  контент  контент  контент  контент  контент  контент  контент
