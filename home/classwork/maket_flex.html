@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            display: flex;
+            align-items: stretch;
+        }
+        .menu {
+            background-color: violet;
+            flex-basis: 200px;
+        }
+        .header{
+            background-color: cadetblue;
+            height: 40px;
+        }
+        .footer{
+            background-color: darkcyan;
+            height: 40px;
+        }
+        .content{
+            background-color: blueviolet;
+            flex-grow: 2;
+        }
+        .banner {
+            background-color: darkolivegreen;
+            flex-basis: 200px;
+        }
+        .block {
+            background-color: darkgoldenrod;
+            margin: 10px 20px;
+            height: 200px;
+        }
+        @media all and (max-width:600px) {
+            .wrap {
+                flex-direction: column;
+            }
+            .content {
+                order: 1;
+            }
+            .banner {
+                order: 2;
+            }
+            .menu {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="wrap">
+        <div class="menu">
+
+        </div>
+        <div class="content">
+            <div class="block">
+
+            </div>
+        </div>
+        <div class="banner">
+
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

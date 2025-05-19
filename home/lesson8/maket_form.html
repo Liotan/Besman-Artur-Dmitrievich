@@ -21,14 +21,40 @@
         label {
             display: block;
         }
-        .article {
-            margin-left: 60px;
+
+        .wrapper {
+            margin-left: 180px;
         }
+
+        .article {
+            width: 100%;
+        }
+
         .radio {
             margin-left: 85px;
         }
-        @media all and (max-width:527px) {
 
+
+        @media all and (max-width:530px) {
+            .radio span::before {
+                content: "\A";
+                white-space: pre;
+            }
+
+            .select span::after {
+                content: "\A";
+                white-space: pre;
+            }
+            select {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            .wrapper {
+                margin-left: 0px;
+            }
+            .article {
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -36,24 +62,35 @@
 <body>
     <form action="http://fe.it-academy.by/TestForm.php" method="POST">
         Для публикации вашей статьи заполните, пожалуйста, эту форму: <br> <br>
+
         <label>
-            Название статьи:
-            <input type="text" class="article" name="article_name" id="">
-        </label> <br>
-        <label>
-            Рубрика:
+            <div style="width: 180px; float: left;">
+                Название статьи:
+            </div>
+            <div class="wrapper">
+                <div>
+                    <input type="text" class="article" name="article_name" id="">
+                </div>
+        </label>
+        </div> <br>
+        <div style="clear: both;"></div>
+        <label class="select">
+            <span>
+                Рубрика:
+            </span>
             <select name="select" id="">
                 <option value="programm">программирование</option>
                 <option value="design">графика и дизайн</option>
                 <option value="comp">компьютерная техника</option>
             </select>
+
         </label> <br>
         <label>
             Публикация:
             <span class="radio">
-                <input type="radio" name="site_or_magazin" value="site">на сайте
-                <input type="radio" name="site_or_magazin" value="magazin">в журнале
-                <input type="radio" name="site_or_magazin" value="site and magazin">на сайте и в журнале
+                <span><input type="radio" name="site_or_magazin" value="site">на сайте</span>
+                <span><input type="radio" name="site_or_magazin" value="magazin">в журнале</span>
+                <span><input type="radio" name="site_or_magazin" value="site and magazin">на сайте и в журнале</span>
             </span>
         </label> <br>
         <label>
