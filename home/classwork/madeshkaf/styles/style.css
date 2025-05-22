@@ -231,6 +231,9 @@ color: white;
 }
 
 .catalogCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 30px;
     font-weight: 400;

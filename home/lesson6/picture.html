@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Picture</title>
+    <link rel="icon" type="image/x-icon" href="icon/tree.ico">
+    <style>
+        body {
+            background-color: rgb(0, 25, 0);
+        }
+
+        div {
+            text-align: center;
+        }
+
+        p {
+            color: antiquewhite;
+            font-size: 30px;
+            font-weight: 400;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <picture>
+            <source srcset="forest_small.jpg" media="(max-width: 500px)">
+            <source srcset="forest4.jpg" media="(max-width: 650px)">
+            <source srcset="forest3.jpeg" media="(max-width:800px)">
+            <source srcset="forest2.jpeg" media="(max-width: 1000px)">
+            <img src="forest.jpg" alt="">
+        </picture>
+        <p>
+            Тег picture позволяет хранить в себе множетсво картинок <br>
+            и выводить нужную, в зависимости от подходящего медиазапроса. <br>
+            В этом примере, в качестве медиазапроса, используется ширина экрана.
+        </p>
+    </div>
 </body>
+
 </html>
