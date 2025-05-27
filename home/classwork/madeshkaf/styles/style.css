@@ -164,6 +164,11 @@ color: white;
     margin-left: 88px;
 }
 
+.description {
+    border-top: #AF9678 solid 2px;
+    padding-top: 59px;
+}
+
 .description h2 {
     color: #937A60;
     font-family: Cormorant;
