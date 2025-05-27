@@ -457,3 +457,267 @@ color: white;
     line-height: 40px;
     padding-left: 90px;
 }
+
+.production {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 148px;
+}
+
+.production img {
+    height: 604px;
+    width: 100%;
+}
+
+.productionInfo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background-color: #3535353D;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+}
+
+.productionInfo p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+}
+
+.productionInfo span {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+}
+
+.howWeWork {
+    margin-bottom: 148px;
+}
+
+.howWeWork h2{
+    font-family: Cormorant;
+    font-size: 68px;
+    font-weight: 400;
+    color: #937A60;
+    line-height: 28px;
+    margin-bottom: 97px;
+}
+
+.workCardsBlock {
+    padding-left: 41px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.workCardsBlock p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-right: 55px;
+}
+
+.workCardImage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.workCardImage img {
+    margin-right: 28px;
+}
+
+.workCardsBlock p {
+    position: relative;
+}
+
+.workCardsBlock p img {
+    position: absolute;
+}
+
+.priceTest {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 148px;
+}
+
+.priceTestImage {
+    width: 80%;
+    background-image: url("../img/testImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.priceTestInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding-left: 70px;
+    width: 100%;
+    padding-top: 280px;
+    padding-bottom: 280px;
+}
+
+.priceTestInfo h2 {
+    font-size: 68px;
+    color: white;
+    line-height: 71px;
+    font-weight: 400;
+    font-family: Cormorant;
+    margin-bottom: 26px;
+}
+
+.priceTestInfo p {
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    line-height: 37px;
+    margin-bottom: 34px;
+}
+
+.priceTestInfo button {
+    padding: 14px 38px;
+    color: white;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #AF9678;
+    border-radius: 8px;
+    border: none;
+    width: 240px;
+}
+
+.contacts2 {
+    margin-bottom: 190px;
+}
+
+.contacts2 h2 {
+    font-family: Cormorant;
+    font-size: 68px;
+    font-weight: 400;
+    color: #937A60;
+    line-height: 28px;
+    margin-bottom: 52px;
+}
+
+.contactsContent {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.contactsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contactsInfo p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.contactsImages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 156px;
+}
+
+.contactsForm {
+    background-image: url("../img/contactsForm.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 66px;
+    border-radius: 8px;
+}
+
+.contactsForm p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+    margin-bottom: 36px;
+}
+
+.contactsForm input {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 10px;
+    padding-left: 26px;
+    margin-bottom: 32px;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.contactsForm button {
+    color: white;
+    padding: 14px 63px;
+    background-color: #AF9678;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+    border: none;
+}
+
+.footer {
+    background-color: #937A60;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerInfo p {
+color: white;
+font-family: Playfair Display;
+font-size: 32px;
+font-weight: 700;
+line-height: 52px;
+margin-right: 127px;
+}
+
+.footerInfo ul {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.footerInfo li {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.map {
+    position: relative;
+}
+
+.map img:nth-child(2) {
+    position: absolute;
+    left: 232px;
+    top: 124px;
+}
