@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50vh;
+        }
+
+        @keyframes animation {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+
+        .square {
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            transition: 0.5s;
+        }
+
+        .circle {
+            background-color: cornflowerblue;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .translate {
+            background-color: maroon;
+            height: 100px;
+            width: 200px;
+            transition: 0.3s;
+        }
+
+        .animated {
+            background-color: goldenrod;
+            height: 200px;
+            width: 200px;
+            border-start-end-radius: 100px;
+            border-end-start-radius: 100px;
+            transition: 2s;
+            animation: animation 4s infinite;
+        }
+
+        .wrap:hover {
+            .circle {
+                transform: scale(0.5);
+            }
+
+            .square {
+                background-color: salmon;
+            }
+
+            .translate {
+                transform: translateX(-646px);
+                border-radius: 50%;
+                height: 50px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="circle">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="translate">
+
+        </div>
+        <div class="animated">
+
+        </div>
+    </div>
+</body>
+
+</html>

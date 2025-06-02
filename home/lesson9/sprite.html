@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animation {
+            from { background-position: 0; }
+            to { background-position: -5325px; }
+        }
+
+        .sprite {
+            width: 669px;
+            height: 569px;
+            background-image: url("spritesheet.png");
+            animation: animation 1s steps(8) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="sprite"></div>
+</body>
+</html>
