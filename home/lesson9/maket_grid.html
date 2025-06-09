@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-columns: auto 1fr;
+            column-gap: 20px;
+        }
+
+        .header {
+            grid-column: 1/3;
+            grid-row: 1;
+            background-color: lightskyblue;
+            font-size: 20px;
+            color: blue;
+            text-align: center;
+            padding-top: 13px;
+        }
+
+        .footer {
+            grid-column: 1/3;
+            grid-row: 3;
+            background-color: lightskyblue;
+            font-size: 20px;
+            color: blue;
+            text-align: center;
+            padding-top: 13px;
+        }
+
+        .menu {
+            grid-column: 1;
+            grid-row: 2;
+            background-color: #f4e68c;
+        }
+
+        .text {
+            grid-column: 2;
+            grid-row: 2;
+            background-image: url("ball.gif"), url("menu.gif");
+            background-position: top right, top left;
+            background-repeat: repeat-y, repeat-y;
+        }
+
+        .image {
+            float: left;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+
+        @media all and (max-width: 400px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .header {
+                display: none;
+            }
+
+            .menu {
+                background: none;
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .menu ul {
+                list-style: none;
+            }
+
+            .menu li {
+                float: left;
+                margin-right: 5px;
+            }
+
+            .text {
+                background: none;
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .image {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="header">
+            ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+        </div>
+        <div class="menu">
+            <p style="text-align: center;">
+                <strong>Виды спорта:</strong>
+            </p>
+            <ul>
+                <li><a href="https://skating.by/konkobezhnyj-sport/">конькобежный спорт</a></li>
+                <li><a href="https://biathlon.by/">биатлон</a></li>
+                <li><a href="https://abff.by/">футбол</a></li>
+                <li><a href="http://www.archery.by/">стрельба из лука</a></li>
+                <li><a href="https://athletics.by/pryzhki/">прыжки в длину</a></li>
+                <li><a href="https://athletics.by/pryzhki/">прыжки в высоту</a></li>
+                <li><a href="https://ledlife.by/">фигруное катание</a></li>
+                <li><a href="https://synchro.by/">синхронное плавание</a></li>
+                <li><a href="https://openchess.by/">шахматы</a></li>
+                <li><a href="https://chesscenter.by/shashki">шашки</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <h3 style="text-align: center;">ФУТБОЛ</h3>
+            <img class="image" src="futbik.jpeg" alt="">
+            <p>
+
+                Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами
+                или другими
+                частями тела(кроме рук) большее количество раз,
+                чем команда соперника. <br><br>
+                Есть 17 официальных правил игры, каждое из которых содержит скисок оговорок и руководящих принципов.
+                Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
+                таких
+                групп,
+                как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями.
+                Законы очень часто формулировались в общих чертах, которые позволяют упростить их в зависимости от
+                характера
+                игры.
+        </div>
+        <div class="footer">
+            ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
+        </div>
+    </div>
+</body>
+
+</html>
