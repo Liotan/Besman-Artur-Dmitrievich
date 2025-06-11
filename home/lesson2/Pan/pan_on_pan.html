@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        div {
+            position: relative;
+        }
         img {
             position: absolute;
         }
+        img:nth-child(2) {
+            top: -200px;
+            transition: 0.4s;
+        }
+
+        div:hover img:nth-child(2){
+                transform: translateY(200px);
+            }
     </style>
 </head>
 
 <body>
-    <div style="position: relative;">
+    <div>
         <img src="bottom_pan.png" alt="">
         <img src="top_pan.png" alt="">
         <img src="3.png" alt="">
