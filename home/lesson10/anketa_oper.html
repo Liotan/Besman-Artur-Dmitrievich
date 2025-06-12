@@ -14,8 +14,8 @@
         var sex = confirm("Если ваш пол мужской, нажмите ОК")
 
         var fullName = surname + " " + name + " " + secondName;
-        var ageInDays = age * 365;
-        var afterFive = age + 5;
+        var ageInDays = parseInt(age) * 365;
+        var afterFive = parseInt(age) + 5;
         var sexResult = sex ? "мужской" : "женский";
         var pension = sex ? ( age >= 65 ? "да" : "нет" ) : (age >= 60 ? "да" : "нет");
 
