@@ -1,0 +1,251 @@
+$base-background-color: #E1EDE6;
+$base-text-color: #598D66;
+$base-text-color-light: #86928B;
+$active-color: #376B44;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Raleway;
+    color: #2C2D35;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.4s;
+    cursor: pointer;
+    border: none;
+}
+
+.header-top {
+    background-color: $base-background-color;
+
+    .header-top-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+
+        .icon {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 100%;
+            color: $base-text-color;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            padding-top: 38px;
+            padding-bottom: 38px;
+
+            li {
+                font-size: 20px;
+                font-weight: 500;
+                transition: 0.5s;
+
+                div {
+                    width: 24px;
+                    height: 24px;
+                    background-image: url("../img/shopping-cart.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: 0.1s;
+                }
+
+                &:hover {
+                    color: $base-text-color;
+                    cursor: pointer;
+
+                    div {
+                        background-image: url("../img/cart-hover.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+                &:active {
+                    color: $active-color;
+
+                    div {
+                        background-image: url("../img/cart-active.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 70px;
+
+    .bird {
+        img{
+            max-width: 150%;
+        }
+    }
+
+    .header-info {
+        padding-top: 145px;
+        padding-bottom: 145px;
+        padding-left: 170px;
+
+        h1 {
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 110%;
+            margin-bottom: 20px;
+
+            span {
+                color: $base-text-color;
+            }
+        }
+
+        p {
+            color: $base-text-color-light;
+            font-size: 18px;
+            line-height: 150%;
+            font-weight: 500;
+            margin-bottom: 60px;
+        }
+
+        button {
+            border: $base-text-color solid 1px;
+            background-color: transparent;
+            color: $base-text-color;
+            padding: 21px 60px;
+
+
+            &:hover {
+                color: #F4F6F5;
+                background-color: $base-text-color;
+            }
+
+            &:active {
+                background-color: $active-color;
+                color: white;
+            }
+        }
+    }
+}
+
+.paintings {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+
+    h2 {
+        font-size: 40px;
+        line-height: 110%;
+        font-weight: 500;
+    }
+
+    div {
+        display: flex;
+        gap: 30px;
+
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #D4E8D9;
+            cursor: pointer;
+
+            &:hover {
+                color: #F4F6F5;
+                background-color: $base-text-color;
+            }
+
+            &:active {
+                color: white;
+                background-color: $active-color;
+            }
+        }
+    }
+}
+
+.new-collection {
+    background-image: url("../img/background.jpg");
+    background-position: 0% 25%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 150px;
+
+    .collection-info {
+        width: 50%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        img {
+            float: left;
+            margin-right: 30px;
+        }
+
+        h2 {
+            color: #F4F6F5;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #F4F6F5;
+            margin-bottom: 60px;
+            line-height: 150%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        button {
+            padding: 21px 60px;
+            background-color: #EEDB6D;
+        }
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 100%;
+
+    .team-image {
+        position: relative;
+    }
+
+    .team-info {
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 110%;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        div {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+}

@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Raleway;
+  color: #2C2D35;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.4s;
+  cursor: pointer;
+  border: none;
+}
+
+.header-top {
+  background-color: #E1EDE6;
+}
+.header-top .header-top-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.header-top .header-top-content .icon {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #598D66;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-top .header-top-content ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.header-top .header-top-content ul li {
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.header-top .header-top-content ul li div {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/shopping-cart.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.1s;
+}
+.header-top .header-top-content ul li:hover {
+  color: #598D66;
+  cursor: pointer;
+}
+.header-top .header-top-content ul li:hover div {
+  background-image: url("../img/cart-hover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-top .header-top-content ul li:active {
+  color: #376B44;
+}
+.header-top .header-top-content ul li:active div {
+  background-image: url("../img/cart-active.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 70px;
+}
+.header .bird img {
+  max-width: 150%;
+}
+.header .header-info {
+  padding-top: 145px;
+  padding-bottom: 145px;
+  padding-left: 170px;
+}
+.header .header-info h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.header .header-info h1 span {
+  color: #598D66;
+}
+.header .header-info p {
+  color: #86928B;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.header .header-info button {
+  border: #598D66 solid 1px;
+  background-color: transparent;
+  color: #598D66;
+  padding: 21px 60px;
+}
+.header .header-info button:hover {
+  color: #F4F6F5;
+  background-color: #598D66;
+}
+.header .header-info button:active {
+  background-color: #376B44;
+  color: white;
+}
+
+.paintings {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.paintings h2 {
+  font-size: 40px;
+  line-height: 110%;
+  font-weight: 500;
+}
+.paintings div {
+  display: flex;
+  gap: 30px;
+}
+.paintings div button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #D4E8D9;
+  cursor: pointer;
+}
+.paintings div button:hover {
+  color: #F4F6F5;
+  background-color: #598D66;
+}
+.paintings div button:active {
+  color: white;
+  background-color: #376B44;
+}
+
+.new-collection {
+  background-image: url("../img/background.jpg");
+  background-position: 0% 25%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 150px;
+}
+.new-collection .collection-info {
+  width: 50%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.new-collection .collection-info img {
+  float: left;
+  margin-right: 30px;
+}
+.new-collection .collection-info h2 {
+  color: #F4F6F5;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.new-collection .collection-info p {
+  color: #F4F6F5;
+  margin-bottom: 60px;
+  line-height: 150%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.new-collection .collection-info button {
+  padding: 21px 60px;
+  background-color: #EEDB6D;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+}
+.team .team-image {
+  position: relative;
+}
+.team .team-info h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 110%;
+}
+.team .team-info p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.team .team-info div {
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */

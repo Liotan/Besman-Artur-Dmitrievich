@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt("Введите ваше имя:");
+        var surname = prompt("Введите вашу фамилию:");
+        var secondName = prompt("Введите ваше отчество:")
+        var age = prompt("Укажите ваш возраст в годах:");
+        var sex = confirm("Если ваш пол мужской, нажмите ОК")
+
+        var fullName = surname + " " + name + " " + secondName;
+        var ageInDays = age * 365;
+        var afterFive = age + 5;
+        var sexResult;
+        var pension;
+
+        if (sex === true) {
+            sexResult = "мужской";
+        } else {
+            sexResult = "женский";
+        }
+
+        if (age >= 65 && sex === true) {
+            pension = "да";
+        } else if (age >= 60 && sex === false) {
+            pension = "да";
+        } else {
+            pension = "нет";
+        }
+
+
+        var answer = ("ваше ФИО: " + fullName + "\nваш возраст в годах: " + age + "\nваш возраст в днях: " + ageInDays + "\nчерез 5 лет вам будет: " + afterFive + "\nваш пол: " + sexResult + "\nвы на пенсии: " + pension);
+        alert(answer);
+        console.log(answer);
+    </script>
+</body>
+
+</html>
