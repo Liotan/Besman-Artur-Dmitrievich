@@ -1,108 +1,144 @@
-$base-background-color: #E1EDE6;
-$base-text-color: #598D66;
-$base-text-color-light: #86928B;
-$active-color: #376B44;
-
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: Raleway;
-    color: #2C2D35;
-}
+@use 'base/base-styles';
+@use 'var/variables.scss';
+@use 'mix/mixins.scss';
 
 .container {
-    width: 1110px;
+    max-width: 1140px;
+    padding: 0 15px;
     margin: 0 auto;
-}
 
-button {
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.4s;
-    cursor: pointer;
-    border: none;
+    @include mixins.media(tablet-big) {
+        max-width: 690px;
+    }
+
+    @include mixins.media(tablet-small) {
+        max-width: 510px;
+    }
+
+    @include mixins.media(phone) {
+        max-width: 320px;
+    }
 }
 
 .header-top {
-    background-color: $base-background-color;
+    background-color: variables.$base-background-color;
 
     .header-top-content {
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
 
         .icon {
             font-size: 20px;
             font-weight: 700;
             line-height: 100%;
-            color: $base-text-color;
+            color: variables.$base-text-color;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        ul {
-            list-style: none;
+        .header-top-info {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             gap: 60px;
-            padding-top: 38px;
-            padding-bottom: 38px;
 
-            li {
-                font-size: 20px;
-                font-weight: 500;
-                transition: 0.5s;
+            ul {
+                display: flex;
+                gap: 60px;
+                padding-top: 38px;
+                padding-bottom: 38px;
 
-                div {
-                    transition: 0.1s;
-                }
-
-                &:hover {
-                    color: $base-text-color;
+                li {
                     cursor: pointer;
 
-                    div {
-                        svg {
-                            path {
-                                stroke: $base-text-color;
-                            }
+                    a {
+                        transition: 0.4s;
+                    }
+
+                    &:hover {
+                        a {
+                            color: variables.$base-text-color;
                         }
+                    }
+
+                    &:active {
+                        a {
+                            color: variables.$active-color;
+                        }
+                    }
+
+                    @include mixins.media(tablet-big) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            svg {
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    path {
+                        stroke: variables.$base-text-color;
                     }
                 }
 
                 &:active {
-                    color: $active-color;
+                    path {
+                        stroke: variables.$active-color;
+                    }
+                }
+            }
 
-                    div {
-                        svg {
-                            path {
-                                stroke: $active-color;
-                            }
-                        }
+        }
+
+        @include mixins.media(tablet-small) {
+            flex-direction: column;
+
+            .icon {
+                align-self: center;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+            .header-top-info {
+                border-top: 1px solid #C3D1C6;
+                gap: none;
+                justify-content: space-between;
+
+                ul {
+                    padding-top: 17.5px;
+                    padding-bottom: 17.5px;
+
+                    li {
+                        font-size: 18px;
                     }
                 }
             }
         }
+
     }
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     margin-bottom: 70px;
 
     .bird {
+        display: flex;
+        align-items: center;
+
         img {
-            max-width: 150%;
+            max-width: 100%;
         }
     }
 
     .header-info {
         padding-top: 145px;
         padding-bottom: 145px;
-        padding-left: 170px;
 
         h1 {
             font-size: 60px;
@@ -111,33 +147,92 @@ button {
             margin-bottom: 20px;
 
             span {
-                color: $base-text-color;
+                color: variables.$base-text-color;
             }
         }
 
         p {
-            color: $base-text-color-light;
-            font-size: 18px;
-            line-height: 150%;
-            font-weight: 500;
+            color: variables.$base-text-color-light;
             margin-bottom: 60px;
         }
 
         button {
-            border: $base-text-color solid 1px;
+            border: variables.$base-text-color solid 1px;
             background-color: transparent;
-            color: $base-text-color;
+            color: variables.$base-text-color;
             padding: 21px 60px;
 
 
             &:hover {
                 color: #F4F6F5;
-                background-color: $base-text-color;
+                background-color: variables.$base-text-color;
             }
 
             &:active {
-                background-color: $active-color;
+                background-color: variables.$active-color;
                 color: white;
+            }
+        }
+
+        @include mixins.media(tablet-big) {
+            padding-top: 35px;
+            padding-bottom: 35px;
+
+            h1 {
+                font-size: 40px;
+                line-height: 100%;
+            }
+
+            p {
+                margin-bottom: 40px;
+            }
+        }
+
+        @include mixins.media(tablet-small) {
+            grid-template-columns: 239px 1fr;
+            padding-bottom: 0px;
+            padding-top: 50px;
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 14.5px 41px;
+            }
+        }
+    }
+
+    @include mixins.media(tablet-small) {
+        margin-bottom: 50px;
+    }
+
+    @include mixins.media(phone) {
+        grid-template-columns: 1fr;
+        .bird {
+            display: none;
+        }
+        
+        .header-info {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0px;
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 14.5px 29px;
             }
         }
     }
@@ -146,14 +241,7 @@ button {
 .paintings {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
     margin-bottom: 30px;
-
-    h2 {
-        font-size: 40px;
-        line-height: 110%;
-        font-weight: 500;
-    }
 
     div {
         display: flex;
@@ -163,31 +251,55 @@ button {
             padding: 10px 20px;
             border-radius: 20px;
             background-color: #D4E8D9;
-            cursor: pointer;
 
             &:hover {
                 color: #F4F6F5;
-                background-color: $base-text-color;
+                background-color: variables.$base-text-color;
             }
 
             &:active {
                 color: white;
-                background-color: $active-color;
+                background-color: variables.$active-color;
             }
+        }
+    }
+
+    @include mixins.media(tablet-big) {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    @include mixins.media(tablet-small) {
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        button {
+            font-size: 18px;
+        }
+    }
+
+    @include mixins.media(phone) {
+        div {
+            overflow: scroll;
+            gap: 20px;
         }
     }
 }
 
 .painting-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-bottom: 70px;
-    max-width: 100%;
 
     .painting-card {
-        background-color: $base-background-color;
+        background-color: variables.$base-background-color;
         display: flex;
         flex-direction: column;
         padding: 20px;
@@ -202,7 +314,7 @@ button {
             margin-top: 20px;
             font-size: 18px;
             line-height: 21px;
-            color: $base-text-color-light;
+            color: variables.$base-text-color-light;
         }
 
         .painting-name {
@@ -224,28 +336,69 @@ button {
             margin-bottom: 20px;
             font-size: 24px;
             line-height: 100%;
-            color: $base-text-color;
+            color: variables.$base-text-color;
         }
 
         button {
             margin-top: auto;
             width: 100%;
-            color: $base-text-color;
-            border: solid 1px $base-text-color;
+            color: variables.$base-text-color;
+            border: solid 1px variables.$base-text-color;
             padding-top: 21px;
             padding-bottom: 21px;
             background-color: transparent;
 
             &:hover {
-                background-color: $base-text-color;
+                background-color: variables.$base-text-color;
                 color: #D4E8D9;
             }
 
             &:active {
-                background-color: $active-color;
+                background-color: variables.$active-color;
                 color: white;
             }
         }
+    }
+
+    @include mixins.media(tablet-big) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include mixins.media(tablet-small) {
+        .painting-card {
+            img {
+                width: 100%;
+            }
+
+            .author {
+                font-size: 16px;
+            }
+
+            .painting-name {
+                font-size: 24px;
+            }
+
+            .painting-info {
+                font-size: 16px;
+            }
+
+            .painting-price {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                padding-top: 14.5px;
+                padding-bottom: 14.5px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    @include mixins.media(phone) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
     }
 }
 
@@ -268,8 +421,6 @@ button {
 
         h2 {
             color: #F4F6F5;
-            font-size: 40px;
-            font-weight: 500;
             line-height: 100%;
             margin-bottom: 20px;
         }
@@ -277,9 +428,6 @@ button {
         p {
             color: #F4F6F5;
             margin-bottom: 60px;
-            line-height: 150%;
-            font-size: 18px;
-            font-weight: 500;
         }
 
         button {
@@ -295,6 +443,50 @@ button {
             }
         }
     }
+
+    @include mixins.media(tablet-big) {
+        .collection-info {
+            width: 100%;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            button {
+                padding: 18px 36.5px;
+            }
+        }
+
+    }
+
+    @include mixins.media(tablet-small) {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 14.5px 35px;
+        }
+    }
+
+    @include mixins.media(phone) {
+        background-image: url("../img/background_phone.jpg");
+        background-position: left top;
+        background-repeat: no-repeat;
+
+        button {
+            padding: 14.5px auto;
+        }
+    }
 }
 
 .team {
@@ -302,7 +494,6 @@ button {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 100%;
     margin-bottom: 70px;
 
     .team-image {
@@ -314,140 +505,209 @@ button {
         flex-direction: column;
         gap: 20px;
 
-        h2 {
-            font-size: 40px;
-            font-weight: 500;
-            line-height: 110%;
-        }
-
-        p {
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 150%;
-        }
-
         div {
             display: flex;
             gap: 30px;
         }
     }
+
+    @include mixins.media(tablet-big) {
+        flex-direction: column;
+
+        .team-image {
+            align-self: flex-start;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    @include mixins.media(tablet-small) {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
 }
 
 .footer {
-    background-color: $base-background-color;
+    background-color: variables.$base-background-color;
+    padding-top: 22px;
+    padding-bottom: 10px;
 
     .footer-contacts {
         display: flex;
-        justify-content: space-between;
-        padding-top: 23px;
-        padding-bottom: 23px;
-        max-width: 100%;
+        flex-wrap: wrap;
 
-        .number {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        .footer-left {
+            margin-right: 115px;
 
-            .icon {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 100%;
-                color: $base-text-color;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
-
-            .phone {
+            .number {
                 display: flex;
                 flex-direction: column;
-                gap: 8px;
+                justify-content: space-between;
+                margin-bottom: 12px;
 
-                a {
+                .icon {
                     font-size: 20px;
-                    font-weight: 500;
+                    font-weight: 700;
                     line-height: 100%;
-                    text-decoration: none;
+                    color: variables.$base-text-color;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
                 }
 
-                p {
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 100%;
-                    color: $base-text-color-light;
-                }
-            }
-        }
-
-        .navigation {
-            display: flex;
-            justify-content: space-between;
-            gap: 60px;
-
-            ul {
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                li {
-                    font-size: 20px;
-                    font-weight: 500;
-                    line-height: 100%;
+                .phone {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
 
                     a {
-                        font-size: 18px;
-                        color: $base-text-color-light;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 100%;
+                        transition: 0.4s;
                         text-decoration: none;
-                        transition: 0.3s;
 
                         &:hover {
-                            color: $base-text-color;
+                            color: variables.$base-text-color;
                         }
 
                         &:active {
-                            color: $active-color;
+                            color: variables.$active-color;
+                        }
+                    }
+
+                    p {
+                        line-height: 100%;
+                        color: variables.$base-text-color-light;
+                    }
+                }
+            }
+        }
+
+        .footer-right {
+            display: flex;
+            flex-grow: 1;
+
+            .navigation {
+                display: flex;
+                margin-right: auto;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-right: 63px;
+
+                    li {
+
+                        a {
+                            font-size: 18px;
+                            color: variables.$base-text-color-light;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: variables.$base-text-color;
+                            }
+
+                            &:active {
+                                color: variables.$active-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social {
+                display: flex;
+                flex-direction: column;
+
+                .socialLogos {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    margin-bottom: 10px;
+                    transition: 0.2s;
+
+                    svg {
+                        cursor: pointer;
+
+                        &:hover {
+                            path {
+                                fill: variables.$base-text-color;
+                            }
+                        }
+
+                        &:active {
+                            path {
+                                fill: variables.$active-color;
+                            }
+                        }
+                    }
+                }
+
+                .reg {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    p {
+                        font-size: 12px;
+                        line-height: 120%;
+                        color: variables.$base-text-color-light;
+
+                        span {
+                            vertical-align: super;
                         }
                     }
                 }
             }
         }
 
-        .social {
+        @include mixins.media(tablet-big) {
+            flex-direction: column;
 
-            .socialLogos {
-                display: flex;
-                justify-content: space-between;
-                gap: 30px;
-                margin-bottom: 10px;
+            .footer-left {
+                margin-right: 0px;
 
-                svg {
-                    cursor: pointer;
-
-                    &:hover {
-                        path {
-                            fill: $base-text-color;
-                        }
-                    }
-
-                    &:active {
-                        path {
-                            fill: $active-color;
-                        }
-                    }
+                .number {
+                    flex-direction: row;
+                    margin-bottom: 30px;
                 }
             }
+        }
 
+        @include mixins.media(tablet-small) {
+            .footer-right {
+                flex-direction: column;
 
+                .navigation {
+                    border-bottom: solid 1px #C3D1C6;
+                    padding-bottom: 16px;
+                    justify-content: space-between;
+                    margin-right: 0px;
 
-            p {
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 120%;
-                color: $base-text-color-light;
+                    ul {
+                        margin-right: 0px;
+                    }
+                }
 
-                span {
-                    vertical-align: super;
+                .social {
+                    align-items: center;
+                    padding-top: 16px;
+
+                    .reg {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 3px;
+                    }
                 }
             }
         }
