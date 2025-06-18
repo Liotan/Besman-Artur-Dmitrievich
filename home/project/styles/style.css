@@ -347,7 +347,6 @@ p {
 }
 @media all and (max-width: 700px) {
   .header .header-info {
-    grid-template-columns: 239px 1fr;
     padding-bottom: 0px;
     padding-top: 50px;
   }
@@ -365,6 +364,7 @@ p {
 }
 @media all and (max-width: 700px) {
   .header {
+    grid-template-columns: 170px 1fr;
     margin-bottom: 50px;
   }
 }

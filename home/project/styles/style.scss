@@ -253,7 +253,6 @@
         }
 
         @include mixins.media(tablet-small) {
-            grid-template-columns: 239px 1fr;
             padding-bottom: 0px;
             padding-top: 50px;
 
@@ -274,6 +273,7 @@
     }
 
     @include mixins.media(tablet-small) {
+        grid-template-columns: 170px 1fr;
         margin-bottom: 50px;
     }
 
