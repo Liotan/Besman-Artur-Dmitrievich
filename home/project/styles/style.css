@@ -148,7 +148,7 @@ p {
     max-width: 510px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .container {
     max-width: 340px;
   }
@@ -231,7 +231,7 @@ p {
     font-size: 18px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .header-top .header-top-content {
     max-width: 100%;
   }
@@ -247,7 +247,7 @@ p {
     right: -15px;
     height: 100%;
     z-index: 0;
-    background-color: #E1EDE6;
+    background-color: #D4E8D9;
   }
   .header-top .header-top-content .header-top-info .header-nav {
     position: absolute;
@@ -257,7 +257,7 @@ p {
     padding: 15px;
     padding-top: 76px;
     width: calc(100% + 30px);
-    background-color: #E1EDE6;
+    background-color: #D4E8D9;
     z-index: 100;
     transform: translateX(-150%);
     transition: transform 0.3s ease-in-out;
@@ -269,14 +269,20 @@ p {
     margin-right: 0;
     margin-bottom: 50px;
   }
+  .header-top .header-top-content .header-top-info .header-nav .nav-list li a {
+    font-size: 18px;
+  }
   .header-top .header-top-content .header-top-info .header-nav-active {
     transform: none !important;
   }
   .header-top .header-top-content .header-top-info .burger {
     display: block;
   }
+  .header-top .header-top-content .header-top-info div {
+    z-index: 1;
+  }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .header-top {
     background-color: white;
   }
@@ -362,7 +368,7 @@ p {
     margin-bottom: 50px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .header {
     grid-template-columns: 1fr;
     margin-bottom: 0px;
@@ -424,7 +430,7 @@ p {
     font-size: 18px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .paintings div {
     overflow: scroll;
     gap: 20px;
@@ -520,7 +526,7 @@ p {
     margin-top: 0px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .painting-cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -593,7 +599,7 @@ p {
     padding: 14.5px 35px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .new-collection {
     background-image: url("../img/background_phone.jpg");
     background-position: center;
@@ -789,7 +795,7 @@ p {
     gap: 3px;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 450px) {
   .footer .footer-contacts .footer-left .number {
     flex-direction: column;
   }

@@ -133,7 +133,7 @@
                     right: -15px;
                     height: 100%;
                     z-index: 0;
-                    background-color: variables.$base-background-color;
+                    background-color: #D4E8D9;
                 }
 
                 .header-nav {
@@ -144,7 +144,7 @@
                     padding: 15px;
                     padding-top: 76px;
                     width: calc(100% + 30px);
-                    background-color: variables.$base-background-color;
+                    background-color: #D4E8D9;
                     z-index: 100;
                     transform: translateX(-150%);
                     transition: transform 0.3s ease-in-out;
@@ -157,6 +157,10 @@
                                 margin-right: 0;
                                 margin-bottom: 50px;
                             }
+
+                            a {
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
@@ -167,6 +171,10 @@
 
                 .burger {
                     display: block;
+                }
+
+                div {
+                    z-index: 1;
                 }
             }
         }

@@ -48,7 +48,7 @@ function loadCatalog(country) {
         htmlTags += `
         <div class="painting-card">
             <picture>
-                <source media="(max-width: 430px)" srcset="${country[item].imgPhone}">
+                <source media="(max-width: 450px)" srcset="${country[item].imgPhone}">
                 <source media="(max-width: 700px)" srcset="${country[item].imgSmall}">
                 <source media="(max-width: 768px)" srcset="${country[item].imgBig}">
                 <img src="${country[item].imgDesk}" alt="">

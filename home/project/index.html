@@ -22,8 +22,8 @@
                 <div class="header-nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#catalog" class="nav-link">Репродукции</a></li>
-                        <li class="nav-item"><a href="new.html" class="nav-link">Новинки</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="new.html" class="nav-link" target="_blank">Новинки</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link" target="_blank">О нас</a></li>
                     </ul>
                 </div>
                 <button class="burger">
@@ -66,7 +66,7 @@
             <button>Продукция</button>
         </div>
     </div>
-    <div class="paintings container">
+    <div class="paintings container" id="catalog">
         <h2>Репродукции</h2>
         <div class="catalogList">
             <button onclick="loadCatalog(france)" class="catalog-button">Франция</button>
@@ -74,7 +74,7 @@
             <button onclick="loadCatalog(england)" class="catalog-button">Англия</button>
         </div>
     </div>
-    <div class="painting-cards container" id="catalog"></div>
+    <div class="painting-cards container"></div>
     <div class="new-collection">
         <div class="container">
             <div class="collection-info">
@@ -98,7 +98,7 @@
     <div class="team container">
         <div class="team-image">
             <picture>
-                <source media="(max-width: 430px)" srcset="img/frame_phone.png">
+                <source media="(max-width: 450px)" srcset="img/frame_phone.png">
                 <source media="(max-width: 700px)" srcset="img/frame_small.png">
                 <source media="(max-width: 768px)" srcset="img/frame_big.png">
                 <img src="img/frame_desk.png" alt="frame">
@@ -134,9 +134,9 @@
                 <div class="navigation">
                     <ul>
                         <li>Репродукции</li>
-                        <li><a href="">Франция</a></li>
-                        <li><a href="">Германия</a></li>
-                        <li><a href="">Англия</a></li>
+                        <li><a href="#catalog" onclick="loadCatalog(france)">Франция</a></li>
+                        <li><a href="#catalog" onclick="loadCatalog(germany)">Германия</a></li>
+                        <li><a href="#catalog" onclick="loadCatalog(england)">Англия</a></li>
                     </ul>
                     <ul>
                         <li>Новинки</li>
@@ -145,8 +145,8 @@
                     </ul>
                     <ul>
                         <li>О нас</li>
-                        <li><a href="">Художники</a></li>
-                        <li><a href="">Менеджеры</a></li>
+                        <li><a href="about.html#painters" target="_blank">Художники</a></li>
+                        <li><a href="about.html#managers" target="_blank">Менеджеры</a></li>
                     </ul>
                 </div>
                 <div class="social">

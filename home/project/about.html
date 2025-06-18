@@ -1,11 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/x-icon" href="img/icon.svg">
+    <style>
+        * {
+            font-family: Raleway;
+            max-width: 1140px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 70px;
+            text-align: center;
+            color: #2C2D35;
+            margin-bottom: 70px;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            padding-left: 50px;
+            color: #2C2D35;
+        }
+
+        .text {
+            margin-bottom: 70px;
+            background-color: #E1EDE6;
+            padding: 20px;
+        }
+
+        p {
+            color: #598D66;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: #376B44;
+            font-weight: 500;
+        }
+
+        .painters {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 70px;
+            background-color: #E1EDE6;
+            padding: 30px;
+        }
+
+        .painter {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .painter img {
+            max-width: 360px;
+            margin-bottom: 20px;
+        }
+
+        .painter span {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .managers {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #E1EDE6;
+            padding: 30px;
+        }
+
+        .managers .manager {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background-color: #376B44;
+        }
+
+        .image {
+            max-width: 250px;
+        }
+
+        .manager img {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        .manager span {
+            font-size: 30px;
+            color: white;
+        }
+
+        .manager p {
+            color: white;
+        }
+
+        @media all and (max-width: 1000px) {
+            .painters {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media all and (max-width: 768px) {
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .manager {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .manager span {
+                font-size: 24px;
+            }
+
+            .manager p {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .image img {
+                padding: 10px;
+            }
+        }
+
+        @media all and (max-width: 450px) {
+            .painter img {
+                max-width: 250px;
+            }
+        }
+    </style>
     <title>О нас</title>
 </head>
+
 <body>
-    <p>SASATT</p>
+    <h1>О нас</h1>
+    <div class="text">
+        <p class="animate__animated animate__lightSpeedInLeft"><span>Мы</span> — группа художников-репликаторов,
+            объединённых общей страстью к искусству и мастерством
+            воссоздания шедевров
+            мировой живописи. Наша команда состоит из профессионалов с глубокими знаниями истории искусства и
+            безупречным
+            техническим мастерством, что позволяет нам создавать точные и вдохновляющие копии знаменитых картин.</p>
+
+        <p class="animate__animated animate__lightSpeedInLeft animate__delay-1s"><span>Каждая работа</span> — это
+            результат кропотливого труда и внимания к деталям, где мы стремимся не просто
+            повторить
+            оригинал, но и передать его дух, атмосферу и энергетику. Мы используем только высококачественные материалы и
+            традиционные техники, чтобы наши реплики были максимально близки к подлинникам.</p>
+
+        <p class="animate__animated animate__lightSpeedInLeft animate__delay-2s"><span>Наша миссия</span> — сделать
+            великие произведения искусства доступными для всех, кто ценит красоту и хочет
+            окружить себя
+            вдохновляющими образами. Мы рады сотрудничать с коллекционерами, галереями, дизайнерами интерьеров и всеми,
+            кто
+            ищет уникальные и качественные произведения искусства.</p>
+
+        <p><span>Присоединяйтесь к нам в путешествии по миру классики и мастерства, где каждая картина рассказывает свою
+                историю!</span></p>
+
+    </div>
+
+    <h2>
+        Наши художники
+    </h2>
+
+    <div class="painters" id="painters">
+        <div class="painter">
+            <img src="img/Olga.jpg" alt="Оля">
+            <span>Оля Свиридова</span>
+        </div>
+        <div class="painter">
+            <img src="img/Dima.jpg" alt="Дима">
+            <span>Дима Капустин</span>
+        </div>
+        <div class="painter">
+            <img src="img/Sasha.jpg" alt="Саша">
+            <span>Саша Шляпик</span>
+        </div>
+    </div>
+
+    <h2>Наши менеджеры</h2>
+
+    <div class="managers" id="managers">
+        <div class="manager">
+            <div class="image">
+                <img src="img/Egor.jpg" alt="Егор">
+            </div>
+            <div>
+                <span>Егор Шалопаев</span>
+                <p>Егор — ответственный и организованный офис-менеджер с опытом эффективной административной поддержки
+                    компании и руководства.</p>
+            </div>
+        </div>
+        <div class="manager">
+            <div class="image">
+                <img src="img/Leha.webp" alt="Леша">
+            </div>
+            <div>
+                <span>Алексей Виноградов</span>
+                <p>Алексей — профессиональный офис-менеджер с опытом организации и координации всех административных
+                    процессов в компании.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
