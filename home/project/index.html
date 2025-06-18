@@ -19,11 +19,16 @@
                 Ink. House
             </div>
             <div class="header-top-info">
-                <ul>
-                    <li><a href="">Репродукции</a></li>
-                    <li><a href="">Новинки</a></li>
-                    <li><a href="">О нас</a></li>
-                </ul>
+                <div class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#catalog" class="nav-link">Репродукции</a></li>
+                        <li class="nav-item"><a href="new.html" class="nav-link">Новинки</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+                    </ul>
+                </div>
+                <button class="burger">
+                    <span class="burger-line"></span>
+                </button>
                 <div>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2_671)">
@@ -64,18 +69,21 @@
     <div class="paintings container">
         <h2>Репродукции</h2>
         <div class="catalogList">
-            <button onclick = "loadCatalog(france)" class="catalog-button">Франция</button>
-            <button onclick = "loadCatalog(germany)" class="catalog-button">Германия</button>
-            <button onclick = "loadCatalog(england)" class="catalog-button">Англия</button>
+            <button onclick="loadCatalog(france)" class="catalog-button">Франция</button>
+            <button onclick="loadCatalog(germany)" class="catalog-button">Германия</button>
+            <button onclick="loadCatalog(england)" class="catalog-button">Англия</button>
         </div>
     </div>
-    <div class="painting-cards container">
-        
-    </div>
+    <div class="painting-cards container" id="catalog"></div>
     <div class="new-collection">
         <div class="container">
             <div class="collection-info">
-                <h2><img src="img/Star.svg" alt="star">Новая коллекция <br>французских авторов</h2>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="img/Star50.svg">
+                    <source media="(max-width: 768px)" srcset="img/Star60.svg">
+                    <img src="img/Star80.svg" alt="star_logo">
+                </picture>
+                <h2>Новая коллекция <br>французских авторов</h2>
                 <p>
                     Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в
                     свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений. <br>
@@ -89,8 +97,12 @@
     </div>
     <div class="team container">
         <div class="team-image">
-            <img style="position: absolute; left: 48px; bottom: 48px;" src="img/arm.png" alt="arm">
-            <img src="img/frame.png" alt="frame">
+            <picture>
+                <source media="(max-width: 430px)" srcset="img/frame_phone.png">
+                <source media="(max-width: 700px)" srcset="img/frame_small.png">
+                <source media="(max-width: 768px)" srcset="img/frame_big.png">
+                <img src="img/frame_desk.png" alt="frame">
+            </picture>
         </div>
         <div class="team-info">
             <h2>Наша команда</h2>
@@ -190,6 +202,7 @@
         </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@
     }
 
     @include mixins.media(phone) {
-        max-width: 320px;
+        max-width: 340px;
     }
 }
 
@@ -104,7 +104,7 @@
 
             .header-top-info {
                 border-top: 1px solid #C3D1C6;
-                gap: none;
+                gap: 0px;
                 justify-content: space-between;
 
                 ul {
@@ -118,6 +118,62 @@
             }
         }
 
+        @include mixins.media(phone) {
+            max-width: 100%;
+
+            .header-top-info {
+                position: relative;
+                padding: 16px 0;
+                border: none;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -15px;
+                    right: -15px;
+                    height: 100%;
+                    z-index: 0;
+                    background-color: variables.$base-background-color;
+                }
+
+                .header-nav {
+                    position: absolute;
+                    left: -15px;
+                    top: 0;
+                    height: 100vh;
+                    padding: 15px;
+                    padding-top: 76px;
+                    width: calc(100% + 30px);
+                    background-color: variables.$base-background-color;
+                    z-index: 100;
+                    transform: translateX(-150%);
+                    transition: transform 0.3s ease-in-out;
+
+                    .nav-list {
+                        display: block;
+
+                        li {
+                            &:not(:last-child) {
+                                margin-right: 0;
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+
+                .header-nav-active {
+                    transform: none !important;
+                }
+
+                .burger {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @include mixins.media(phone) {
+        background-color: white;
     }
 }
 
@@ -215,14 +271,16 @@
 
     @include mixins.media(phone) {
         grid-template-columns: 1fr;
+        margin-bottom: 0px;
+
         .bird {
             display: none;
         }
-        
+
         .header-info {
             padding-top: 60px;
             padding-bottom: 60px;
-            margin-bottom: 0px;
+
             h1 {
                 font-size: 30px;
             }
@@ -407,22 +465,22 @@
     background-position: 0% 25%;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 
     .collection-info {
-        width: 50%;
+        max-width: 520px;
         padding-top: 70px;
         padding-bottom: 70px;
 
         img {
             float: left;
-            margin-right: 30px;
         }
 
         h2 {
             color: #F4F6F5;
             line-height: 100%;
             margin-bottom: 20px;
+            padding-left: 100px;
         }
 
         p {
@@ -450,6 +508,7 @@
 
             h2 {
                 font-size: 30px;
+                padding-left: 70px;
             }
 
             p {
@@ -464,8 +523,11 @@
     }
 
     @include mixins.media(tablet-small) {
+        margin-bottom: 50px;
+
         h2 {
             font-size: 24px;
+            padding-left: 50px;
         }
 
         p {
@@ -480,12 +542,23 @@
 
     @include mixins.media(phone) {
         background-image: url("../img/background_phone.jpg");
-        background-position: left top;
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 60px;
 
-        button {
-            padding: 14.5px auto;
+        .collection-info {
+
+            h2 {
+                padding-left: 60px;
+            }
+
+            button {
+                padding: 14.5px 83.5px;
+            }
         }
+
+
     }
 }
 
@@ -495,10 +568,6 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 70px;
-
-    .team-image {
-        position: relative;
-    }
 
     .team-info {
         display: flex;
@@ -658,6 +727,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+
                     p {
                         font-size: 12px;
                         line-height: 120%;
@@ -707,6 +777,30 @@
                         flex-direction: row;
                         align-items: center;
                         gap: 3px;
+                    }
+                }
+            }
+        }
+
+        @include mixins.media(phone) {
+            .footer-left {
+
+                .number {
+                    flex-direction: column;
+                }
+            }
+
+            .footer-right {
+                .navigation {
+                    flex-direction: column;
+                    gap: 15px;
+
+                    ul {
+                        li {
+                            a {
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }
