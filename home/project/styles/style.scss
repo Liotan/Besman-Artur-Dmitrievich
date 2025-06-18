@@ -12,7 +12,7 @@
     }
 
     @include mixins.media(tablet-small) {
-        max-width: 510px;
+        max-width: 550px;
     }
 
     @include mixins.media(phone) {
@@ -369,6 +369,7 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
+        height: 100%;
 
         img {
             max-width: 100%;
@@ -474,6 +475,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin-bottom: 70px;
+    max-width: 3000px;
+    margin: 0 auto;
 
     .collection-info {
         max-width: 520px;

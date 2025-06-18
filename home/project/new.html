@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/icon.svg">
     <title>Новинки</title>
+    <style>
+        * {
+            font-family: Raleway;
+            max-width: 1140px;
+            margin: 0 auto;
+            color: #2C2D35;
+            ;
+        }
+
+        body {
+            background-color: #E1EDE6;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.2s;
+            color: white;
+        }
+
+        a:hover {
+            color: #376B44;
+        }
+
+        a:active {
+            color: #2C2D35;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .text {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 20px;
+            color: #376B44;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .swiper {
+            max-width: 100%;
+            height: 500px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 16px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .swiper-slide img {
+            display: block;
+            max-height: 400px;
+        }
+
+        .swiper-button-prev {
+            color: green;
+        }
+
+        .swiper-button-next {
+            color: green;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .links {
+            background-color: #598D66;
+            border-radius: 20px;
+            padding-left: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @media all and (max-width: 800px) {}
+    </style>
 </head>
+
 <body>
-    
+    <h1>Новая коллекция французских авторов</h1>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/bal-v-mulen-de-la-galett-renuar.jpg" alt="">
+                <p>&laquo;Бал в Мулен де ла Галетт&raquo;, Ренуар</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/kacheli-fragonar.jpg" alt="">
+                <p>&laquo;Качели&raquo;, Жан-Оноре Фрагонар</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/plot-meduzy-teodor-zheriko.jpg" alt="">
+                <p>&laquo;Плот медузы&raquo;, Теодор Жерико</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/portret-aktrisy-zhanny-samari-lico-renuar.jpg" alt="">
+                <p>&laquo;Портрет актрисы Жанны Самари&raquo;, Ренуар</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/svoboda-na-barrikadah-delakrua.jpg" alt="">
+                <p>&laquo;Свобода на баррикадах&raquo;, Делакруа</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/vosxod-solnca-mone.jpg" alt="">
+                <p>&laquo;Впечатление&raquo;, Клод Моне</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/zavtrak-na-trave-eduard-mane.jpg" alt="">
+                <p>&laquo;Завтрак на траве&raquo;, Эдуард Мане</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/newPaintings/france/zavtrak-na-trave-klod-mone.jpg" alt="">
+                <p>&laquo;Завтрак на траве&raquo;, Клод Моне</p>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <p class="text">
+        В нашем салоне художественных репродукций представлено новое поступление картин французских художников &mdash;
+        <br>
+        традициями знаменитого Салона французских художников, который с 1880 года является одним из важнейших <br>
+        художественных событий Франции и собирает лучшие произведения живописи, скульптуры и графики. <br> <br>
+
+        Эти произведения отражают богатое наследие французского искусства &mdash; от классических академических традиций
+        до <br>
+        импрессионизма и постимпрессионизма, с именами таких мастеров, как Поль Сезанн, Эдуард Мане, Огюст Роден, Гюстав
+        <br>
+        Курбе и других выдающихся творцов. В репродукциях вы найдете тонкую игру света и цвета, характерную для <br>
+        французской живописи XIX–XX веков, а также разнообразие жанров &mdash; от пейзажей и портретов до сцен городской
+        жизни <br>
+        и натюрмортов. <br> <br>
+
+        Приглашаем вас окунуться в атмосферу Парижских салонов &mdash; тех самых выставок, где рождались и развивались
+        <br>
+        ключевые направления европейского искусства, и открыть для себя красоту и глубину французской художественной
+        <br>
+        традиции в нашем салоне!
+    </p>¸
+
+    <div>
+
+    </div>
+
+    <h2>Также вы можете ознакомиться с поступлениями предыдущих лет:</h2>
+    <div class="links">
+        <p>
+            <a href="new21.html">Поступления 2021 года</a>
+        </p>
+        <p>
+            <a href="new20.html">Поступления 2020 года</a>
+        </p>
+        <p>
+            <a href="index.html">Вернуться на главную страницу</a>
+        </p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
+
 </html>
