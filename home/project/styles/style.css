@@ -432,7 +432,7 @@ p {
 }
 @media all and (max-width: 450px) {
   .paintings div {
-    overflow: scroll;
+    overflow: auto;
     gap: 20px;
   }
 }

@@ -8,21 +8,191 @@
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/icon.svg">
     <title>Новинки 2020</title>
+    <style>
+        * {
+            font-family: Raleway;
+            color: #2C2D35;
+        }
+
+        .wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #376B44;
+        }
+
+        .newcomer {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px #376B44 solid;
+        }
+
+        .newcomer-image {
+            text-align: center;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .newcomer-image span {
+            background-size: cover;
+            display: block;
+            width: 110%;
+            height: 110%;
+            position: absolute;
+            left: -5%;
+            top: -5%;
+            filter: blur(30px);
+            z-index: 1;
+        }
+
+        .newcomer-image img {
+            display: block;
+            max-height: 440px;
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .newcomer h3 {
+            font-size: 30px;
+        }
+
+        .newcomer p {
+            font-size: 20px;
+            line-height: 150%;
+            padding: 10px 15px;
+            background: linear-gradient(90deg, #598D66 0%, rgba(157, 172, 255, 0) 20%, rgba(157, 172, 255, 0) 100%);
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        @media all and (max-width: 700px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .newcomer h3 {
+                font-size: 22px;
+            }
+
+            .newcomer p {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Коллекция 2020 года</h1>
-    <h2>Картины немецких авторов</h2>
-    <div>
-
-    </div>
-    <h2>Картины английских авторов</h2>
-    <div>
-
-    </div>
-    <h2>Картины французских</h2>
-    <div>
-
+    <div class="wrap">
+        <h1>Коллекция 2020 года</h1>
+        <h2>Картины немецких авторов</h2>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/germany/germany20/abbatstvo-v-dubovom-lesu-kaspar-david-fridrih.jpg');"></span>
+                <img src="img/newPaintings/germany/germany20/abbatstvo-v-dubovom-lesu-kaspar-david-fridrih.jpg" alt="Аббатство в дубовом лусу(Фридрих)">
+            </div>
+            <h3>&laquo;Аббатство в дубовом лесу&raquo;, Каспар Давид Фридрих</h3>
+            <p>Аббатство в дубовом лесу &mdash; Каспар Давид Фридрих. Холст, масло. 110 x 171 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span style="background-image: url('img/newPaintings/germany/germany20/krilo-durer.jpg');"></span>
+                <img src="img/newPaintings/germany/germany20/krilo-durer.jpg" alt="Крыло сизоворонки(Дюрер)">
+            </div>
+            <h3>&laquo;Крыло сизоворонки&raquo;, Альбрехт Дюрер</h3>
+            <p>Крыло сизоворонки &mdash; Альбрехт Дюрер. Бумага, акварель. 20 x 20 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span style="background-image: url('img/newPaintings/germany/germany20/venecianka-durer.jpg');"></span>
+                <img src="img/newPaintings/germany/germany20/venecianka-durer.jpg" alt="Портрет Венецианки(Дюрер)">
+            </div>
+            <h3>&laquo;Портрет венецианки&raquo;, Альбрехт Дюрер</h3>
+            <p>Портрет венецианки &mdash; Альбрехт Дюрер. Дерево, масло, 32,5 x 24,5 см</p>
+        </div>
+        <h2>Картины английских авторов</h2>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span style="background-image: url('img/newPaintings/england/england20/borcy-tomas-ikins.jpg');"></span>
+                <img src="img/newPaintings/england/england20/borcy-tomas-ikins.jpg" alt="Борцы(Икинс)">
+            </div>
+            <h3>&laquo;Борцы&raquo;, Томас Икинс</h3>
+            <p>Борцы &mdash; Томас Икинс. Холст, масло. 122,87 x 152,4 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/england/england20/ljagushka-charlz-berton-barber.jpg');"></span>
+                <img src="img/newPaintings/england/england20/ljagushka-charlz-berton-barber.jpg" alt="Лягушка(Барбер)">
+            </div>
+            <h3>&laquo;Лягушка&raquo;, Чарльз Бертон Барбер</h3>
+            <p>Лягушка &mdash; Чарльз Бертон Барбер. Холст, масло. 47 x 61 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/england/england20/spjaschaja-krasavica-dzhon-maler-koler.jpg');"></span>
+                <img src="img/newPaintings/england/england20/spjaschaja-krasavica-dzhon-maler-koler.jpg" alt="Спящая красавица(Малер Кольер)">
+            </div>
+            <h3>&laquo;Спящая красавица&raquo;, Джон Малер Кольер</h3>
+            <p>Спящая красавица &mdash; Джон Малер Кольер. Холст, масло. 111,7 x 142,2 см</p>
+        </div>
+        <h2>Картины французских авторов</h2>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/france/france20/naturschicy-zhorzh-sera.jpg');"></span>
+                <img src="img/newPaintings/france/france20/naturschicy-zhorzh-sera.jpg" alt="Натурщицы(Сера)">
+            </div>
+            <h3>&laquo;Натурщицы&raquo;, Жорж Сёра</h3>
+            <p>Натурщицы &mdash; Жорж Сёра. Холст, масло. 200 x 249,9 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/france/france20/portret-damy-s-sobachkoj-zhan-onore-fragonar-1769-god.jpg');"></span>
+                <img src="img/newPaintings/france/france20/portret-damy-s-sobachkoj-zhan-onore-fragonar-1769-god.jpg"
+                    alt="Портрет дамы с собачкой(Фрагонар)">
+            </div>
+            <h3>&laquo;Портрет дамы с собачкой&raquo;, Жан-Оноре Фрагонар</h3>
+            <p>Портрет дамы с собачкой &mdash; Жан-Оноре Фрагонар. Холст, масло. 81.3 x 65.4 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/france/france20/posle-kupanija_-zhenschina-vytiraet-zatylok-jedgar-dega.jpg');"></span>
+                <img src="img/newPaintings/france/france20/posle-kupanija_-zhenschina-vytiraet-zatylok-jedgar-dega.jpg"
+                    alt="После купания(Дега)">
+            </div>
+            <h3>&laquo;После купания. Женщина вытирает затылок&raquo;, Эдгар Дега</h3>
+            <p>После купания. Женщина вытирает затылок &mdash; Эдгар Дега. Холст, масло. 62.2 x 65 см</p>
+        </div>
+        <a href="new.html" title="back">Вернуться к новинкам</a>
+        <a href="index.html" title="main">Вернуться на главную страницу</a>
     </div>
 </body>
 

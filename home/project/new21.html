@@ -9,26 +9,198 @@
     <link rel="icon" type="image/x-icon" href="img/icon.svg">
     <title>Новинки 2021</title>
     <style>
+        * {
+            font-family: Raleway;
+            color: #2C2D35;
+        }
 
+        .wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #376B44;
+        }
+
+        .newcomer {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px #376B44 solid;
+        }
+
+        .newcomer-image {
+            text-align: center;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .newcomer-image span {
+            background-size: cover;
+            display: block;
+            width: 110%;
+            height: 110%;
+            position: absolute;
+            left: -5%;
+            top: -5%;
+            filter: blur(30px);
+            z-index: 1;
+        }
+
+        .newcomer-image img {
+            display: block;
+            max-height: 440px;
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .newcomer h3 {
+            font-size: 30px;
+        }
+
+        .newcomer p {
+            font-size: 20px;
+            padding: 10px 15px;
+            background: linear-gradient(90deg, #598D66 0%, rgba(157, 172, 255, 0) 20%, rgba(157, 172, 255, 0) 100%);
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #598D66;
+        }
+
+        a:active {
+            color: #376B44;
+        }
+
+        @media all and (max-width: 700px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .newcomer h3 {
+                font-size: 22px;
+            }
+
+            .newcomer p {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
-<body>
-    <h1>Коллекция 2021 года</h1>
-    <h2>Картины французских авторов</h2>
+<body class="wrap">
     <div>
-
+        <h1>Коллекция 2021 года</h1>
+        <h2>Картины французских авторов</h2>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/france/france21/ljagushatnik-per-ogjust-renuar.jpg');"></span>
+                <img src="img/newPaintings/france/france21/ljagushatnik-per-ogjust-renuar.jpg" alt="Лягушатник(Ренуар)">
+            </div>
+            <h3>&laquo;Лягушатник&raquo;, Пьер Огюст Ренуар</h3>
+            <p>Лягушатник &mdash; Пьер Огюст Ренуар. Холст, масло. 81 x 66 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/france/france21/stoga-sena-klod-mone-opisanie-kartiny.jpg');"></span>
+                <img src="img/newPaintings/france/france21/stoga-sena-klod-mone-opisanie-kartiny.jpg" alt="Стога сена(Моне)">
+            </div>
+            <h3>&laquo;Стога сена&raquo;, Клод Моне</h3>
+            <p>Стога сена &mdash; Клод Моне. Холст, масло.</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span style="background-image: url('img/newPaintings/france/france21/vil-de-avre-koro.jpg');"></span>
+                <img src="img/newPaintings/france/france21/vil-de-avre-koro.jpg" alt="Виль д'Авре(Коро)">
+            </div>
+            <h3>&laquo;Виль д&apos;Авре&raquo;, Камиль Коро</h3>
+            <p>Виль д&apos;Авре &mdash; Камиль Коро. Холст, масло. 49.3 x 65.5 см</p>
+        </div>
+        <h2>Картины английских авторов</h2>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/england/england21/ledi-godiva-dzhon-maler-koler.jpg');"></span>
+                <img src="img/newPaintings/england/england21/ledi-godiva-dzhon-maler-koler.jpg" alt="Леди Годива(Малер Кольер)">
+            </div>
+            <h3>&laquo;Леди Годива&raquo;, Джон Малер Кольер</h3>
+            <p>Леди Годива &mdash; Джон Малер Кольер. Холст, масло. 142,2 x 183 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/england/england21/ljubov-nebesnaja-i-ljubov-zemnaja-dzhon-maler-koler.jpg');"></span>
+                <img src="img/newPaintings/england/england21/ljubov-nebesnaja-i-ljubov-zemnaja-dzhon-maler-koler.jpg"
+                    alt="Любовь небесная и Любовь земная(Малер Кольер)">
+            </div>
+            <h3>&laquo;Любовь небесная и Любовь земная&raquo;, Джон Малер Кольер</h3>
+            <p>Любовь небесная и Любовь земная - Джон Малер Кольер. Холст, масло. 104 x 142 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/england/england21/sobaki-v-lodke-uinslou-homer.jpg');"></span>
+                <img src="img/newPaintings/england/england21/sobaki-v-lodke-uinslou-homer.jpg" alt="Собаки в лодке(Хомер)">
+            </div>
+            <h3>&laquo;Собаки в лодке&raquo;, Уинслоу Хомер</h3>
+            <p>Собаки в лодке &mdash; Уинслоу Хомер. Бумага, акварель. 35.6 x 50.8 см</p>
+        </div>
+        <h2>Картины немецких авторов</h2>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/germany/germany21/sem-smertnix-grexov-diks.jpg');"></span>
+                <img src="img/newPaintings/germany/germany21/sem-smertnix-grexov-diks.jpg" alt="">
+            </div>
+            <h3>&laquo;Семь смертных грехов&raquo;, Отто Дикс</h3>
+            <p>Семь смертных грехов &mdash; Отто Дикс. Панель, смешанная техника. 179 x 120 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span style="background-image: url('img/newPaintings/germany/germany21/son-iosifa-mengs.jpg');"></span>
+                <img src="img/newPaintings/germany/germany21/son-iosifa-mengs.jpg" alt="">
+            </div>
+            <h3>&laquo;Сон святого Иосифа&raquo;, Антон Рафаэль Менгс</h3>
+            <p>Сон святого Иосифа &mdash; Антон Рафаэль Менгс. Дерево, масло. 114 x 86 см</p>
+        </div>
+        <div class="newcomer">
+            <div class="newcomer-image">
+                <span
+                    style="background-image: url('img/newPaintings/germany/germany21/strannik-kaspar-david-fridrix.jpg');"></span>
+                <img src="img/newPaintings/germany/germany21/strannik-kaspar-david-fridrix.jpg" alt="">
+            </div>
+            <h3>&laquo;Странник над морем тумана&raquo;, Каспар Давид Фридрих</h3>
+            <p>Странник над морем тумана &mdash; Каспар Давид Фридрих. Холст, масло. 94,8 x 74,8 см</p>
+        </div>
+        <a href="new.html" title="back">Вернуться к новинкам</a>
+        <a href="index.html" title="main">Вернуться на главную страницу</a>
     </div>
-    <h2>Картины английских авторов</h2>
-    <div>
-
-    </div>
-    <h2>Картины немецких авторов</h2>
-    <div>
-
-    </div>
-
-
 </body>
 
 </html>
