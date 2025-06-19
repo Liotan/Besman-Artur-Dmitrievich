@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        button {
+            display: block;
+            width: 400px;
+            height: 60px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <button onclick="addInfo()">ввод информации о стране</button>
+        <button onclick="getInfo()">получение информации о стране</button>
+        <button onclick="countryList()">перечень всех стран</button>
+        <button onclick="deleteInfo()">удаление информации о стране</button>
+    </div>
+
+    <script>
+
+        function addInfo() {
+            var country = prompt("Введите название страны");
+            var capital = prompt("Введите название столицы");
+
+            if (country && capital) {
+                addCountry(country, capital);
+            } else {
+                alert("Информация о стране не получена");
+            }
+        }
+
+        function getInfo() {
+            var country = prompt("Введите название страны");
+            var get = getCountryInfo(country);
+
+            if (country) {
+                alert(get);
+            } else {
+                alert("Такой страны нет");
+            }
+        }
+
+        function countryList() {
+            var list = listCountrys();
+            alert(list);
+        }
+
+        function deleteInfo() {
+            var country = prompt("Введите название страны");
+            if (country in countrysH) {
+                deleteCountry(country);
+                alert("Страна удалена");
+            } else {
+                alert("Такой страны нет")
+            }
+        }
+
+        var countrysH = {};
+
+        function addCountry(countryName, capitalName) {
+            countrysH[countryName] = capitalName;
+        }
+
+        function deleteCountry(countryName) {
+            delete countrysH[countryName];
+        }
+
+        function getCountryInfo(countryName) {
+            if (countryName in countrysH)
+                return 'страна: ' + countryName + ' столица: ' + countrysH[countryName];
+            else
+                return 'нет информации о стране ' + countryName + '!';
+        }
+
+        function listCountrys() {
+            var res = "";
+            for (var CN in countrysH)
+                res += '\n' + getCountryInfo(CN);
+            return res;
+        }
+
+        addCountry('Германия', 'Берлин');
+        addCountry('Венгрия', 'Будапешт');
+        addCountry('Франция', 'Париж');
+
+        console.log("список стран:" + listCountrys());
+
+    </script>
+</body>
+
+</html>
